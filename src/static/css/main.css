@@ -8,15 +8,15 @@ body {
     overflow-y: hidden;
 }
 
-
-.header {
-    background: #3B60BD;
-    height: 120px;
+.image { 
+    width: auto; 
+    height:114px; 
+    background-image: url(../src/static/assets/Header.svg); 
     filter: drop-shadow(0em .5em .1em rgba(255, 0, 0, 0.5));
-    position: relative;
+    padding: relative;
 }
 
-.headertype { 
+.header { 
     font-size: 48px;
     font-weight: bold;
     color: #fff;
@@ -35,10 +35,36 @@ body {
 
 .title-content{
     font-size: 30px;
-    font-weight: 400;
+    font-weight: 600;
     color: #fff;
     letter-spacing: 3px;
     filter: drop-shadow(5px 10px 2px rgba(10, 3, 10, 0.1));
+    background-color: #3B60BD; 
+    padding: 1rem 0rem 1rem 3rem; 
+    margin: 5rem 5rem 5rem 0rem;
+}
+
+.title-content2{
+    font-size: 30px;
+    font-weight: 600;
+    color: #fff;
+    letter-spacing: 3px;
+    filter: drop-shadow(5px 10px 2px rgba(10, 3, 10, 0.1));
+    background-color: #3B60BD; 
+    padding: 1rem; 
+    margin: 3rem;
+    text-align: center;
+}
+
+.title-contentwhite{
+    font-size: 22px;
+    font-weight: 600;
+    color: #3F3F3F;
+    letter-spacing: 3px;
+    filter: drop-shadow(5px 10px 2px rgba(10, 3, 10, 0.1));
+    background-color: #fff; 
+    padding: 1rem; 
+    margin: 3rem;
 }
 
 .content{
@@ -51,16 +77,12 @@ body {
     filter: drop-shadow(5px 10px 2px rgba(10, 3, 10, 0.1));
 }
 
-.carousel{
-    height: 100%;
-}
-
 .start_button{
-    width: 318px;
+    width: 300px;
     height: 117px;
     padding-top: 20px;
     font-size: 48px;
-    font-weight: 500;
+    font-weight: 600;
     color: #fff;
     background-color: #3B60BD;
     letter-spacing: 3px;
@@ -72,13 +94,113 @@ body {
 .start_button:hover {
     background-color: #FBFCD4;
     border: #5D5FEF 4px;
+    font-size: 55px;
+    font-weight: 600;
   }
 
 .back_button{
     color: aliceblue;
+}
 
+.back_button:hover {
+    background-color: #FBFCD4;
+    border: #5D5FEF 4px;
 }
 
 .carousel-indicators {
     position: fixed;
+    /* _carousel.scss:170 */
+    right: 0;
+    bottom: 10px;
+    left: 0;
+    z-index: 15;
+    display: flex;
+    justify-content: center;
+    padding-left: 0;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    height: 50px;
+    width: 50px;
+    outline: #3B60BD;
+    background-color: rgb(61, 113, 255);
+    background-size: 100%, 100%;
+    border-radius: 50%;
+    position: fixed;
+}
+
+  .pop{
+    background-color: transparent;
+    font-size: 24px;
+    font-weight: 500;
   }
+
+.carousel-inner, .carousel, carousel-item {
+    overflow:visible;
+  }
+
+.img-fluid{
+    background-color: #3B60BD;
+}
+
+.card-title{
+    color: #3B60BD;
+    font-size: 40px;
+    font-weight: 600;
+    margin: 1rem 0rem 0.8rem 0rem;
+}
+
+.card-text{
+    color: #3F3F3F;
+    font-size: 24px;
+    font-weight: 550;
+    line-height: 36px;
+    letter-spacing: 3px;
+}
+
+.card-textSmall{
+    color: #3F3F3F;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.card{
+    filter: drop-shadow(5px 5px 2px rgba(0, 0, 0, 0.1));
+}
+
+.drug-title{
+    color: #fff;
+    font-size: 26px;
+    font-weight: 600;
+    margin: 1rem;
+    padding: 1rem;
+    background-color: #3B60BD;
+}
+
+.drug-text{
+    color: #3F3F3F;
+    font-size: 18px;
+    font-weight: 550;
+    line-height: 26px;
+    letter-spacing: 2px;
+}
+
+.game-text{
+    background-color: #E6EBF7;
+    color: #3B60BD;
+    font-size: 26px;
+    font-weight: 600;
+    filter: drop-shadow(10px 10px 2px rgba(255, 0, 0, 0.5));
+    padding: 1rem 0.2rem;
+    letter-spacing: 2px;
+}
+
+.have-drug-text{
+    background-color: #3B60BD;
+    color: #E6EBF7;
+    font-size: 26px;
+    font-weight: 600;
+    filter: drop-shadow(10px 10px 2px rgba(255, 0, 0, 0.5));
+    padding: 1rem 0.2rem;
+    letter-spacing: 2px;
+}
