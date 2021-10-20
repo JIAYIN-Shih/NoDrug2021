@@ -1,0 +1,65 @@
+body{
+    background: black;
+    overflow: hidden;
+}
+/*分數*/
+#score{
+    text-align: center;
+    position: fixed;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.time{
+    display: inline;
+    position: fixed;
+    top: 5%;
+    right: 5%;
+    background-image: url("../img/clock.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 7vw;
+    height: 7vw;
+    
+}
+
+h1{
+    font-size: 42px;
+    color: #FF1C5E;
+    text-align: center;
+    position: absolute;
+    top: 57%;
+    left: 49%;
+    transform: translate(-50%,-50%);
+    margin: 0;
+    
+}
+
+/*背景*/
+#canvas1 {
+    position: absolute;
+    border: white solid 3px;
+    width: 100%;
+    height: 100%;
+    
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    /*置中大法*/
+    z-index: -1;
+}
+
+/*主角*/
+#dino{
+    height: 200px;
+    width: 200px;
+    position: relative;
+    top: 480px;
+    left: 80px;
+    background-image: url(https://googledino.ru/assets/googe_dino.png);
+    background-size: cover;
+    animation: jump 0.5s;
+}
+
