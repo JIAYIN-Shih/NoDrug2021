@@ -1,0 +1,118 @@
+body {
+    overflow: hidden;
+    font-family: Roboto;
+    background-color: rgba(0, 0, 0, 0.9);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+.message {
+    display: none;
+    background-color: #fbfcd4;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+    text-align: center;
+    padding: 30px 0px;
+    border-radius: 30px;
+    width: 800px;
+}
+
+.message .title {
+    font-size: 48px;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.message img {
+    width: 300px;
+    margin: 0 auto;
+}
+
+.message .subTitle {
+    font-size: 36px;
+    padding-top: 30px;
+}
+
+.message .content {
+    font-size: 26px;
+    padding-top: 30px;
+}
+
+.message .content a {
+    color: black;
+}
+
+.message .button {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.message li {
+    margin: 0px 20px;
+    border-radius: 20px;
+}
+
+.message .button a {
+    display: block;
+    padding: 20px;
+    border: solid 3px #3b60bd;
+    border-radius: 20px;
+}
+
+.message .renew a {
+    background-color: #3b60bd;
+    display:block;
+    color: #E6EBF7;
+    font-size: 42px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    background-color: #3B60BD;
+    padding: 30px 28px;
+    border: 5px solid transparent;
+    border-radius: 30px;
+    filter: drop-shadow(5px 5px 2px rgba(0, 0, 0, 0.1));
+}
+.message .renew a:hover{
+    color:#3B60BD;
+    background-color: #FBFCD4;
+    border: 5px solid  #3B60BD;
+}
+
+.message .next{
+    display: flex;
+}
+
+.message .next a {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    color: #3F3F3F;
+    font-size: 36px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    padding: 30px 28px;
+    border: 5px solid #3B60BD;
+    border-radius: 30px;
+    filter: drop-shadow(5px 5px 2px rgba(0, 0, 0, 0.1));
+}
+.message .next a:hover{
+    background-color: #E6EBF7;
+    color: #3B60BD;
+    border: 5px solid #A5A6F6;
+}

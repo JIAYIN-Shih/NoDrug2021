@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>反毒</title>
+    <link rel="stylesheet" href="stylesheet/reset.css">
+    <link rel="stylesheet" href="stylesheet/all.css">
+</head>
+
+<body>
+    <div class="message" id="pass">
+        <h2 class="title">挑戰成功</h2>
+        <hr>
+        <img src="img/success.png" alt="success">
+        <h3 class="subTitle">恭喜通過！</h4>
+        <p class="content">還想知道更多毒品資訊嗎？歡迎撥打毒防諮詢專線<br><a href="tel:+0800770885">0800770885</a></p>
+        <hr>
+        <ul class="button">
+            <li class="renew">
+                <a href="#" onclick="renew()">再次挑戰</a>
+            </li>
+            <li class="next">
+                <a href="../complete/question01.html">到下一關 <img src="img/Vector.png" alt="Vector" style="width: 15px; margin-left: 5px;"></a>
+            </li>
+        </ul>
+    </div> 
+
+    <div class="message" id="fail">
+        <h2 class="title">挑戰失敗</h2>
+        <hr>
+        <img src="img/fail.png" alt="success">
+        <h3 class="subTitle">毒品知識請加強！</h4>
+        <p class="content">如果還是有不懂的地方，請撥打毒防諮詢專線<br><a href="tel:+0800770885">0800770885</a>詢問</p>
+        <hr>
+        <ul class="button">
+            <li class="renew">
+                <a href="#" onclick="renew()">再次挑戰</a>
+            </li>
+            <li class="next">
+                <a href="#">到下一關 <img src="img/Vector.png" alt="Vector" style="width: 15px; margin-left: 5px;"></a>
+            </li>
+        </ul>
+    </div> 
+
+    <script src="js/phaser.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
