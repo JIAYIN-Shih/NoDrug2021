@@ -3,6 +3,9 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <title>instruction</title>
     <link rel='stylesheet' href='../src/static/css/bootstrap-5.0.2-dist/bootstrap.min.css'>
     <link rel="stylesheet" href="../src/static/css/main.css">
@@ -17,7 +20,7 @@
 
 <body color="#F3B977" style="margin: 0px; padding: 0px;">
     <header class="row image">
-        <img src="../src/static/assets/Header.svg">
+        <img src="../src/static/assets/Header.png">
         <div class="col-lg-4">
             <div class="row justify-content-center">
                 <div class="col-6 col-md-8 header" style="position:absolute; left: 300px; top: 42px;">
@@ -128,10 +131,9 @@
                                 <div class="row no-gutters" style="padding-top: 10rem; padding-bottom: 15rem;">
                                     <div class="col-2"></div>
                                     <div class="col-2">
-                                        <button type="button" class="btn btn-lg pop" data-bs-toggle="tooltip"
-                                            data-bs-placement="top" title="海洛因" data-bs-content="別名">
+                                        <a href="#" data-toggle="popover1" title="海洛因" data-content="Some content inside the popover">s
                                             <img src="../src/static/assets/海洛.png" style="height: 113px; width: 251px;">
-                                        </button>
+                                        </a>
                                     </div>
                                     <div class="col-2">
                                         <a href="#" data-toggle="popover" title="Popover Header"
@@ -527,24 +529,8 @@ filter: drop-shadow(5px 5px 2px rgba(0, 0, 0, 0.1));">
 
 </body>
 <script>
-    $(function () {
-        $('#rangeSlider').slider({
-            formater: function (value) {
-                return 'Current value: ' + value;
-                tooltip: 'show';
-            }
-        });
-
-        $("#popoverbutton").popover({
-            html: true,
-            placement: 'bottom',
-            title: 'Options',
-            content: function () {
-                return $("#popover-content").html();
-            }
-        });
-
-
+    $(document).ready(function(){
+      $('[data-toggle="popover1"]').popover();
     });
 </script>
 

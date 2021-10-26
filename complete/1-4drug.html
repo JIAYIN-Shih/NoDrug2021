@@ -1,26 +1,32 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-    <meta charset="UTF-8">
     <title>Drug instruction</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel='stylesheet' href='../src/static/css/bootstrap-5.0.2-dist/bootstrap.min.css'>
     <link rel="stylesheet" href="../src/static/css/main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
 
-    <script src="../static/js/jquery3.5.1.min.js"></script>
-    <script src="../static/js/popper.min.js"></script>
-    <script src="../src/static/js/bootstrap/js/bootstrap.bundle.js"></script>
-    <script src="../src/static/js/bootstrap/js/bootstrap.min.js"></script>
-    <script src="../static/js/vue.js"></script>
 </head>
 
 <body color="#F3B977" style="margin: 0px; padding: 0px;">
     <header class="row image">
-        <img src="../src/static/assets/Header.svg">
+        <img src="../src/static/assets/Header.png">
         <div class="col-lg-4">
             <div class="row justify-content-center">
                 <div class="col-6 col-md-8 header" style="position:absolute; left: 300px; top: 42px;">
-                    <a href="../complete/game_play.html"
+                    <a href="../complete/index.html"
                         style="color:aliceblue; font-weight:bold; text-decoration:none;">返回
                         <img src="../src/static/assets/dashicons-arrow-left-alt.svg" alt="logo"
                             style="width: 60px; height:60px;">
@@ -31,69 +37,80 @@
     </header>
 
     <div class="row bg_color">
-        <div class="col-lg">
-
-            <div class="row justify-content-center" style="margin: 5rem 0rem 5rem 8rem;">
+        <div class="col-12">
+            <div class="row justify-content-center" style="margin: 5rem 0rem 8rem 8rem;">
                 <div class="col-12" style="margin-top: 2rem;">
                     <div class="row justify-content-center g-0">
-                        <div class="col-2 title-content2" style="text-align: center; margin-right: 0rem;">
+                        <div class="col-2 title-content2" style="text-align: center; margin: 0rem;">
                             毒品分級</div>
-                        <div class="col-5 title-contentwhite" style="text-align: center; margin-left: 0rem;">
+                        <div class="col-6 title-content-white" style="text-align: center; margin: 0rem;">
                             常見濫用藥物及分級說明，點點看照片找找看是哪一級的毒品吧!</div>
-                        <div class="col-5"></div>
                     </div>
-                    <div class="row no-gutters" style="padding-top: 10rem; padding-bottom: 15rem;">
+                    <div class="row no-gutters" style="padding-top: 10rem; padding-bottom: 10rem;">
                         <div class="col-2"></div>
                         <div class="col-2">
-                            <button type="button" class="btn btn-lg pop" data-bs-toggle="tooltip"
-                                data-bs-placement="top" title="海洛因" data-bs-content="別名">
+                            <button type="button" class="btn pop" title="海洛因" data-container="body"
+                                data-toggle="popover1" data-html="true" data-bs-placement="top" data-bs-content="第一級毒品，
+                                別名：四號、白粉、毒品之王，鴉片、嗎啡、古柯鹼亦屬於第一級毒品">
                                 <img src="../src/static/assets/海洛.png" style="height: 113px; width: 251px;">
                             </button>
                         </div>
                         <div class="col-2">
-                            <a href="#" data-toggle="popover" title="Popover Header"
-                                data-content="Some content inside the popover">Toggle popover</a>
-                        </div>
-                        <div class="col-2">
-                            <a tabindex="0" class="btn btn-lg btn-danger" role="button" data-toggle="popover"
-                                data-trigger="focus" title="Dismissible popover"
-                                data-content="And here's some amazing content. It's very engaging. Right?">Dismissible
-                                popover</a>
-                        </div>
-
-                        <div class="col-2">
-                            <button type="button" class="btn btn-lg pop" data-bs-toggle="popover"
-                                data-bs-placement="top" title="海洛因" data-bs-content="別名">
-                                <img src="../src/static/assets/海洛.png" style="height: 113px; width: 251px;">
+                            <button type="button" class="btn pop" title="安非他命" data-container="body"
+                                data-toggle="popover1" data-html="true" data-bs-placement="bottom" data-bs-content="第二級毒品，別名：冰塊、安公子、冰糖，安非他命、搖頭丸、大麻
+                                亦屬於第二級毒品">
+                                <img src="../src/static/assets/安非.png" style="height: 143px; width: 274px;">
                             </button>
                         </div>
-                        <div class="col-2"></div>
+                        <div class="col-2">
+                            <button type="button" class="btn pop" title="苯二氮平類" data-container="body"
+                                data-toggle="popover1" data-html="true" data-bs-placement="top" data-bs-content="第三級毒品，愷他命、甲基甲基卡西酮
+                                亦屬於第三級毒品">
+                                <img src="../src/static/assets/FM.png" style="height: 172px; width: 199px;">
+                            </button>
+                        </div>
+                        <div class="col-2">
+                            <button type="button" class="btn pop" title="蝴蝶片" data-container="body"
+                                data-toggle="popover1" data-html="true" data-bs-placement="bottom" data-bs-content="第四級毒品，別名：藍色小精靈，佐沛眠、苯二氮平類、火狐狸
+                                亦屬於第四級毒品">
+                                <img src="../src/static/assets/蝴蝶片.png" style="height: 190px; width: 239px;">
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="col-3 justify-content-center" style="margin-left: 48rem; margin-bottom: 10rem;">
-                <ul class="pagination">
-                    <li class="page-item"><a class="page-link" href="#">1</a></li>
-                    <li class="page-item"><a class="page-link" href="#">2</a></li>
-                    <li class="page-item"><a class="page-link" href="#">3</a></li>
-                    <li class="page-item"><a class="page-link" href="#">4</a></li>
-                    <li class="page-item"><a class="page-link" href="#">5</a></li>
-                    <li class="page-item"><a class="page-link" href="#">6</a></li>
-                </ul>
-            </div>
         </div>
 
-        <a href="../complete/character.html">
+        <div class="col-3 justify-content-center" style="margin-left: 48rem; margin-bottom: 6rem;">
+            <ul class="pagination">
+                <li class="page-item"><a class="page-link" href="../complete/character.html">1</a></li>
+                <li class="page-item"><a class="page-link" href="../complete/story.html">2</a></li>
+                <li class="page-item disabled"><a class="page-link" href="../complete/1-4drug.html">3</a></li>
+                <li class="page-item"><a class="page-link" href="../complete/new_drug.html">4</a></li>
+                <li class="page-item"><a class="page-link" href="../complete/haha.html">5</a></li>
+                <li class="page-item"><a class="page-link" href="../complete/candy_compare.html">6</a></li>
+            </ul>
+        </div>
+
+        <a href="../complete/story.html">
             <button class="carousel-control-prev" type="button" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
             </button>
         </a>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-            data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
+        <a href="../complete/new_drug.html">
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </a>
     </div>
-
+    <script>
+        $(function () {
+            $("[data-toggle='popover1']").popover();
+        });
+    </script>
 </body>
+
+</html>
