@@ -100,6 +100,26 @@ a:hover{
               -2px 2px 0 #ffff, 
               2px 2px 0 #ffff;
 }
+.p_sharePage_D{
+    font-size: 36px;
+    font-weight: bolder;
+    letter-spacing: 3px;
+    margin-bottom: 28px;
+    
+    color: white;
+    -webkit-text-stroke: 6px white; 
+    -webkit-text-stroke: 6px white; 
+}
+.p_sharePage_T{
+    font-size: 36px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-bottom: 28px;
+    
+    color: black;
+    
+}
+
 
 .btn_sharePage{
     display: inline-block;
@@ -127,10 +147,12 @@ a:hover{
 
 
 .Q_btn{
+    position:relative;
     color: #3B60BD;
     border: 4px solid #FBFCD4;
     background-color: #FBFCD4;
     filter: drop-shadow(10px 10px 4px #ff000081);
+    z-index: 1;
 }
 .Q_btn:hover{
     color: #3B60BD;
@@ -159,4 +181,19 @@ a:hover{
     width: 52px;
 }
 
- 
+.share_logo{
+    width: 250px;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+}
+
+.share_p{
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    font-size: 36px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    margin-bottom: 28px;
+}
