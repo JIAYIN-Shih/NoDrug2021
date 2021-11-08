@@ -341,7 +341,7 @@ body {
 .pagination{
     position: fixed;
     left: 50%;
-    top: 95%;
+    top: 92%;
     bottom: 2%;
     transform:translateX(-50%);
 }
