@@ -8,11 +8,6 @@ html,
 body {
     height: 100%;
     width: 100%;
-  font-family: 'Noto Sans TC';
-  font-style: normal;
-  font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/notosanstc/v20/-nF7OG829Oofr2wohFbTp9iFOisNA_cTyNromxqQuEMQ2wHYwbnmy1R1jDujLebozBXCo2qYhRo.0.woff2) format('woff2');
-  unicode-range: U+1f921-1f930, U+1f932-1f935, U+1f937-1f939, U+1f940-1f944, U+1f947-1f94a, U+1f950-1f95f, U+1f962-1f967, U+1f969-1f96a, U+1f980-1f981, U+1f984-1f98d, U+1f990-1f992, U+1f994-1f996, U+1f9c0, U+1f9d0, U+1f9d2, U+1f9d4, U+1f9d6, U+1f9d8, U+1f9da, U+1f9dc-1f9dd, U+1f9df-1f9e2, U+1f9e5-1f9e6, U+20024, U+20487, U+20779, U+20c41, U+20c78, U+20d71, U+20e98, U+20ef9, U+2107b, U+210c1, U+22c51, U+233b4, U+24a12, U+2512b, U+2546e, U+25683, U+267cc, U+269f2, U+27657, U+282e2, U+2898d, U+29d5a, U+f0001-f0005, U+f0019, U+f009b, U+f0101-f0104, U+f012b, U+f01ba, U+f01d6, U+f0209, U+f0217, U+f0223-f0224, U+fc355, U+fe327, U+fe517, U+feb97, U+fffb4;
     /*overflow-y: hidden;*/
     overflow-x: hidden;
     overflow-y: hidden;
@@ -20,9 +15,10 @@ body {
 
 .image { 
     width: auto; 
-    height: 100px; 
+    height:114px; 
     background-image: url(../src/static/assets/Header.svg); 
     filter: drop-shadow(0em .5em .1em rgba(255, 0, 0, 0.5));
+    padding: relative;
 }
 
 .header { 
@@ -42,31 +38,30 @@ body {
     letter-spacing: 3px;
     filter: drop-shadow(5px 10px 2px rgba(10, 3, 10, 0.1));
     background-color: #3B60BD; 
-    padding: 1rem 0rem 1rem 2rem; 
-    margin: 0rem 5rem 2rem 0rem;
+    padding: 1rem 0rem 1rem 3rem; 
+    margin: 5rem 5rem 5rem 0rem;
 }
 
 .title-content2{
-    font-size: 34px;
-    font-weight: 600;
+    font-size: 24px;
+    font-weight: 550;
     color: #fff;
     letter-spacing: 3px;
     filter: drop-shadow(5px 10px 2px rgba(10, 3, 10, 0.1));
     background-color: #3B60BD; 
-    padding: 1rem; 
-    margin: 2rem;
+    padding: 1rem;
     text-align: center;
 }
 
 .title-content-white{
-    font-size: 20px;
+    font-size: 24px;
     font-weight: 500;
     letter-spacing: 3px;
     filter: drop-shadow(5px 10px 2px rgba(10, 3, 10, 0.1));
     background-color: #fff; 
     color: #3B60BD; 
     padding: 1rem; 
-    margin: 0rem;
+    margin: 2rem;
 }
 
 .content{
@@ -74,9 +69,9 @@ body {
     font-weight: bold;
     color: #3F3F3F;
     letter-spacing: 3px;
-    line-height: 24px;
     background-color: #fff;
     border-radius: 30px;
+    padding: 1rem;
     filter: drop-shadow(5px 10px 2px rgba(10, 3, 10, 0.1));
 }
 
@@ -86,8 +81,8 @@ body {
     padding-top: 20px;
     font-size: 48px;
     font-weight: 600;
-    color: #fff;
-    background-color: #3B60BD;
+    color: #3B60BD;
+    background-color: #FBFCD4;
     letter-spacing: 3px;
     border: #5D5FEF 4px;
     border-radius: 30px;
@@ -95,7 +90,7 @@ body {
 }
 
 .start_button:hover {
-    background-color: #FBFCD4;
+    background-color: #3B60BD;
     border: #5D5FEF 4px;
     font-size: 55px;
     font-weight: 600;
@@ -157,28 +152,27 @@ body {
 
 .card-title{
     color: #3B60BD;
-    font-size: 40px;
+    font-size: 32px;
     font-weight: 600;
     margin: 1rem 0rem 0.8rem 0rem;
 }
 
 .card-text{
     color: #3F3F3F;
-    font-size: 24px;
+    font-size: 22px;
     font-weight: 550;
-    line-height: 36px;
-    letter-spacing: 3px;
+    line-height: 32px;
+    letter-spacing: 2px;
 }
 
 .card-textSmall{
     color: #3F3F3F;
-    font-size: 18px;
-    font-weight: 400;
+    font-size: 20px;
+    font-weight: 500;
 }
 
 .card{
     filter: drop-shadow(5px 5px 2px rgba(0, 0, 0, 0.1));
-    margin: 0rem 0px;
 }
 
 .drug-title{
@@ -221,16 +215,17 @@ body {
 .page-link{
     background-color: #3B60BD;
     color: #E6EBF7;
-    height: 60px;
-    width: 60px;
-    font-size: 22px;
+    height: 45px;
+    width: 45px;
+    font-size: 20px;
     font-weight: 600;
     filter: drop-shadow(5px 5px 2px rgba(255, 0, 0, 0.5));
-    padding: 1rem 0.2rem;
+    padding: 0.5rem 0.2rem;
     margin: 0rem 1rem;
     border-radius: 50% !important;
     border: none;
     text-align: center;
+    margin-bottom: 8rem !important;
 }
 
 .page-link li a:hover:not(.active) {
@@ -243,33 +238,36 @@ body {
 .question-title{
     font-size: 48px;
     font-weight: 800;
-    color: #3F3F3F;
-    border-right: 4px solid #3F3F3F;
+    color: #E6EBF7;
+    background-color: #3B60BD;
     letter-spacing: 3px;
     padding-right: 0px;
     margin-right: 0px;
 }
 
 .question-content{
-    font-size: 24px;
+    font-size: 22px;
     font-weight: 600;
-    color: #3F3F3F;
-    padding-left: 3rem;
+    height: 3rem;
+    color: #E6EBF7;
+    border-left: 4px solid #E6EBF7;
+    padding-left: 0rem;
+    padding-bottom: 6rem;
 }
 
-.question-right{
+.question-left{
     color: #E6EBF7;
-    font-size: 48px;
+    font-size: 40px;
     font-weight: 600;
     letter-spacing: 5px;
     background-color: #3B60BD;
-    padding: 5rem 0rem 0rem 0rem;
+    padding: 3rem 0rem 0rem 0rem;
 
 }
 
-.question-right-text{
+.question-left-text{
     color: #E6EBF7;
-    font-size: 32px;
+    font-size: 28px;
     font-weight: 400;
     letter-spacing: 3px;
     background-color: #3B60BD;
@@ -280,18 +278,18 @@ body {
 
 .question-button{
     color: #E6EBF7;
-    font-size: 38px;
+    font-size: 32px;
     font-weight: 600;
     letter-spacing: 3px;
     background-color: #3B60BD;
-    padding: 1.2rem 4.5rem;
+    padding: 1.2rem 3.5rem;
     border: 2px solid  #E6EBF7;
     border-radius: 30px;
     filter: drop-shadow(5px 5px 2px rgba(0, 0, 0, 0.1));
 }
 
 .question-button:hover{
-    color:#3F3F3F;
+    color:#3F3F3F !important;
     background-color: #FBFCD4;
     border: 5px solid  #5D5FEF;
     display:block;
@@ -300,12 +298,12 @@ body {
 
 .option{
     color: #3F3F3F;
-    font-size: 30px;
+    font-size: 26px;
     font-weight: 600;
     letter-spacing: 3px;
     background-color: #fff;
-    padding: 1rem 10rem 1rem 0rem;
-    margin-bottom: 1rem;
+    padding: 0.5rem 0rem 0.5rem 0rem;
+    margin-bottom: 1.2rem;
     border-radius: 30px;
     filter: drop-shadow(5px 5px 2px rgba(0, 0, 0, 0.1));
 }
@@ -313,28 +311,20 @@ body {
 .option:hover{
     color:#E6EBF7;
     background-color: #3B60BD;
-    border: 2px solid  #5D5FEF;
-    display:block;
-    filter: drop-shadow(5px 5px 2px rgba(255, 0, 0, 0.5));
-}
-
-.option:hover{
-    color:#E6EBF7;
-    background-color: #3B60BD;
-    border: 2px solid  #5D5FEF;
+    border: 4px solid  #5D5FEF;
     display:block;
     filter: drop-shadow(5px 5px 2px rgba(255, 0, 0, 0.5));
 }
 
 .answer-body{
     color: #3F3F3F;
-    font-size: 22px;
+    font-size: 18px;
     font-weight: 600;
     letter-spacing: 2px;
     line-height: 2rem;
     background-color: #fff;
     padding: 1rem 3rem 1.5rem 1.5rem ;
-    margin-top: 1rem;
+    margin-top: 0rem;
     border-radius: 30px;
     filter: drop-shadow(5px 5px 2px rgba(255, 0, 0, 0.5));
     white-space: nowrap;
