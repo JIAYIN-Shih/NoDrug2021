@@ -38,7 +38,7 @@ function preload() {
     resize();
     //內建背景
     bg = this.add.graphics(0, 0);
-    bg.fillStyle(0x0000FF, 1);
+    bg.fillStyle(0xF3B977, 1);
     bg.fillRect(0, 0, 1920, 1080);
 
     //LOAD
